@@ -1,0 +1,124 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/*https://fonts.google.com/specimen/Fira+Code*/
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap");
+
+body {
+  font-family: "Fira Code", "Helvetica Neue", "Arial", sans-serif;
+  font-size: 12pt;
+  /* background: linear-gradient(to bottom, #d1d1d1 0%, #f1f1f1 100%); */
+  background: #f1f1f1;
+  color: #333;
+  /* height: 100vh; */
+}
+
+.about blockquote {
+  color: rgb(126, 126, 148);
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+}
+nav {
+  background: #0076ff;
+  padding: 0 1em;
+}
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: right;
+}
+
+nav li {
+  list-style: none;
+  margin: 0.3em;
+}
+
+nav a {
+  text-decoration: none;
+  color: #e2edfe;
+  font-size: 12pt;
+  font-weight: bolder;
+}
+nav svg {
+  height: 14pt;
+}
+header {
+  color: #e2edfe;
+  background: #0076ff;
+  text-align: center;
+  padding: 2em 0;
+}
+main {
+  box-shadow: inset 0 2em 1em rgba(0, 0, 0, 0.3);
+  padding-top: 2em;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+}
+
+.demo {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  margin: 1em;
+  color: #556;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
+  /* max-width: 1300px; */
+}
+
+.card {
+  width: 40em;
+  background: #f3f3f1;
+  /* height: 100%; */
+  padding: 0.8em;
+  margin: 10px;
+  /* overflow: hidden; */
+  border: 1px solid #333;
+  border-radius: 10px;
+  box-shadow: 0 0.1em 0.3em rgba(0, 0, 0, 0.3);
+}
+
+.card-content {
+  padding: 0.5em;
+}
+.card-content ul {
+  padding-left: 1em;
+}
+h3 {
+  padding: 0.3em 0;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #0076ff;
+  border: 2px rgba(138, 58, 212, 0.541);
+  color: rgb(238, 238, 255);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2em;
+  border-radius: 6px;
+  padding: 5px 20px;
+  margin-top: 0.2em;
+}
+
+@media screen and (max-width: 1000px) {
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
