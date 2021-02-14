@@ -58,6 +58,10 @@ header {
   text-align: center;
   padding: 2em 0;
 }
+#logo {
+  max-width: 640px;
+  width: 95%;
+}
 main {
   padding-top: 2em;
   /* display: flex;
